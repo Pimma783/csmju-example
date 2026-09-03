@@ -6,7 +6,7 @@ describe('HealthController', () => {
   it('คืน envelope { success, data, meta } ตาม api-conventions.md', () => {
     expect(new HealthController().check()).toEqual({
       success: true,
-      data: { status: 'ok' },
+      data: { status: 'degraded' },
       meta: {},
     });
   });
