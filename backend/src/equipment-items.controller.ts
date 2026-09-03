@@ -9,6 +9,11 @@ export class EquipmentItemsController {
     return { success: true, data: [...this.items.values()], meta: { total: this.items.size } };
   }
 
+  @Get('count')
+  count() {
+    return { success: true, data: { total: this.items.size }, meta: {} };
+  }
+
   @Get(':id')
   getOne(@Param('id') id: string) {
     const found = this.items.get(id);
