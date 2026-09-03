@@ -23,6 +23,17 @@
         }
       }
     },
+    "/v1/equipment-items/count": {
+      "get": {
+        "operationId": "EquipmentItemsController_count",
+        "parameters": [],
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
     "/v1/equipment-items/{id}": {
       "get": {
         "operationId": "EquipmentItemsController_getOne",
