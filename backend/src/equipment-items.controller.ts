@@ -6,7 +6,13 @@ export class EquipmentItemsController {
 
   @Get()
   list() {
+    const unusedTotal = this.items.size;
     return { success: true, data: [...this.items.values()], meta: { total: this.items.size } };
+  }
+
+  @Get('borrowed-count')
+  borrowedCount() {
+    return { success: true, data: { total: 0 }, meta: {} };
   }
 
   @Get(':id')
