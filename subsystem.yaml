@@ -1,0 +1,9 @@
+name: csmju-example
+standards_version: "1.0.0"
+
+public_endpoints:
+  - GET /v1/health
+
+owners:
+  pl: "@csmju2030/pl-example"
+  aie: "@csmju2030/aie-example"

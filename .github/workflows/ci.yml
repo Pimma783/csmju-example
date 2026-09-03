@@ -1,0 +1,15 @@
+# .github/workflows/ci.yml — copied verbatim from
+# csmju2030-standards/templates/ci.yml. Do not edit by hand; CODEOWNERS
+# restricts changes to @csmju2030/devops.
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  compliance:
+    uses: Pimma783/csmju2030-standards/.github/workflows/subsystem-compliance.yml@v1.0.0
+    with:
+      subsystem_name: csmju-example
+    secrets: inherit
