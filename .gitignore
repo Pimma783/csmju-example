@@ -16,6 +16,10 @@ node_modules/
 dist/
 build/
 coverage/
+.openapi-build/
+*.tsbuildinfo
+next-env.d.ts
+.turbo/
 
 # ยกเว้นไฟล์ template
 !.env.example

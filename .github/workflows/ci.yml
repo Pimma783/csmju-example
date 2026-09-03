@@ -9,7 +9,7 @@ on:
 
 jobs:
   compliance:
-    uses: Pimma783/csmju2030-standards/.github/workflows/subsystem-compliance.yml@v1.1.0
+    uses: Pimma783/csmju2030-standards/.github/workflows/subsystem-compliance.yml@v1.2.0
     with:
       subsystem_name: csmju-example
     secrets: inherit
