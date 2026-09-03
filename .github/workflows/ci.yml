@@ -13,3 +13,5 @@ jobs:
     with:
       subsystem_name: csmju-example
     secrets: inherit
+
+# AIE แอบเพิ่มบรรทัดนี้เอง

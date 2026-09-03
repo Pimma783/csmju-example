@@ -7,7 +7,7 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "jest",
-    "generate:openapi": "node -e \"console.log('openapi generation stub — wire up @nestjs/swagger here')\""
+    "generate:openapi": "node -e \"console.log('openapi generation stub \u2014 wire up @nestjs/swagger here')\""
   },
   "dependencies": {
     "@nestjs/core": "10.0.0",
@@ -19,7 +19,8 @@
     "@prisma/client": "5.0.0",
     "class-validator": "0.14.0",
     "class-transformer": "0.5.1",
-    "zod": "3.23.0"
+    "zod": "3.23.0",
+    "jsonwebtoken": "^9.0.2"
   },
   "devDependencies": {
     "typescript": "5.5.0",

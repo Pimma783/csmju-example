@@ -13,3 +13,8 @@ model EquipmentItem {
   borrowed_by   String?
   fine_amount   Int     @default(0)
 }
+
+model Fine {
+  id          String @id
+  fine_amount Float
+}
